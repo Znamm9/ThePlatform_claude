@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(xargs:*)",
+      "Bash(mkdir:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm run build)",
+      "Bash(pnpm prisma generate:*)",
+      "Bash(test:*)",
+      "Bash(pg_isready:*)",
+      "Bash(pnpm dev)",
+      "Bash(curl:*)",
+      "Bash(npx prisma migrate:*)",
+      "Bash(docker:*)",
+      "Bash(pnpm prisma migrate:*)",
+      "Bash(sudo -u postgres psql:*)",
+      "Bash(pnpm prisma db seed:*)",
+      "Bash(./start-local.sh)",
+      "Bash(head:*)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHFhLXBsYXRmb3JtLmNvbSIsInN1YiI6Ijk5YWFiNDhkLTMyZDAtNDE5YS05ZDE3LWNmNmJhNTI4ODkxNyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc2NjM5OTA1NywiZXhwIjoxNzY3MDAzODU3fQ.khhppMDl8MLPo9aI7ZHQRhbI3EcKuZsdPhyTejBV7tk\")",
+      "Bash(node:*)",
+      "Bash(lsof:*)",
+      "Bash(find:*)",
+      "Bash(chmod:*)",
+      "Bash(/tmp/fix-dark-mode.sh)",
+      "Bash(/tmp/fix-dark-mode-pass2.sh)",
+      "Bash(exit)",
+      "Bash(pnpm prisma:generate:*)",
+      "Bash(pnpm prisma:migrate:*)",
+      "Bash(pnpm prisma:seed:*)"
+    ]
+  }
+}
