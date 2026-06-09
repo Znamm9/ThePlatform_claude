@@ -29,7 +29,24 @@
       "Bash(exit)",
       "Bash(pnpm prisma:generate:*)",
       "Bash(pnpm prisma:migrate:*)",
-      "Bash(pnpm prisma:seed:*)"
+      "Bash(pnpm prisma:seed:*)",
+      "Bash(./quick-start.sh)",
+      "Bash(psql:*)",
+      "Bash(PGPASSWORD=password psql:*)",
+      "Bash(netstat -tlnp)",
+      "WebFetch(domain:engineering-club.com)",
+      "WebSearch",
+      "Read(//tmp/**)",
+      "Bash(grep -oE '\"[A-Z][a-zA-Z][^\"]{14,200}\"' /tmp/ec.js)",
+      "Bash(grep -oE '\"[А-ЯҐІЇЄа-яґіїє][^\"]{4,15}\"' /tmp/ec.js)",
+      "Bash(grep -oE '\"[А-ЯҐІЇЄа-яґіїє][^\"]{200,500}\"' /tmp/ec.js)",
+      "Bash(grep -oE '\"[А-ЯҐІЇЄа-яґіїє][^\"]{50,200}\"' /tmp/ec.js)",
+      "Bash(grep -oE '[0-9]+\\\\\\\\?\\\\$|\\\\$[0-9]+|[0-9]+ ?грн|[0-9]{3,5}\\\\$' /tmp/ec.js)",
+      "Bash(mkdir -p /home/vadym/projects/landing-draft-1/src/app /home/vadym/projects/landing-draft-1/src/components/ui /home/vadym/projects/landing-draft-1/src/components/landing /home/vadym/projects/landing-draft-1/src/content /home/vadym/projects/landing-draft-1/public)",
+      "Read(//home/vadym/projects/**)",
+      "Bash(pnpm install *)",
+      "Bash(PORT=3010 pnpm dev *)",
+      "Bash(pnpm -v)"
     ]
   }
 }

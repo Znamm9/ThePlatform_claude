@@ -16,32 +16,41 @@ A comprehensive learning platform for teaching QA Automation topics built with N
 ### Prerequisites
 
 - Node.js >= 18.0.0
-- pnpm >= 8.0.0
-- PostgreSQL
+- pnpm >= 8.0.0 (will be auto-installed if missing)
+- Docker (recommended) OR PostgreSQL
 
-### Install pnpm
+### Quick Setup (Recommended)
 
-If you don't have pnpm installed:
-
-```bash
-npm install -g pnpm
-```
-
-Or using standalone script:
+**First time setup:**
 
 ```bash
-curl -fsSL https://get.pnpm.io/install.sh | sh -
+./setup-and-run.sh
 ```
 
-### Installation
+This single command will:
+- Install all dependencies
+- Set up PostgreSQL (Docker or local)
+- Create environment files with auto-generated secrets
+- Set up and seed the database
+- Start all development servers
+
+**Daily development:**
 
 ```bash
-# Install dependencies
-pnpm install
-
-# Run development servers
-pnpm dev
+./quick-start.sh
 ```
+
+**Stop everything:**
+
+```bash
+./stop.sh
+```
+
+See [QUICK-START.md](QUICK-START.md) for detailed usage of all helper scripts.
+
+### Manual Installation
+
+If you prefer manual setup, see [SETUP.md](SETUP.md) for step-by-step instructions.
 
 ## Project Structure
 
@@ -55,6 +64,24 @@ qa-automation-platform/
 │   └── ui/           # Shared React components
 └── ...
 ```
+
+## Access Points
+
+After starting the servers:
+
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:3001
+- **API Documentation** (Swagger): http://localhost:3001/api/docs
+
+## Test Users
+
+The database is seeded with these test accounts:
+
+| Role       | Email                           | Password       |
+|------------|---------------------------------|----------------|
+| Admin      | admin@qa-platform.com           | admin123       |
+| Instructor | instructor@qa-platform.com      | instructor123  |
+| Student    | student@qa-platform.com         | student123     |
 
 ## Development
 
@@ -70,6 +97,15 @@ pnpm lint
 
 # Run tests
 pnpm test
+```
+
+## Useful Scripts
+
+```bash
+./setup-and-run.sh    # First-time setup + start servers
+./quick-start.sh      # Quick start (after initial setup)
+./restart.sh          # Restart all services
+./stop.sh             # Stop all services
 ```
 
 ## License
